@@ -25,15 +25,8 @@ monopoly_x <- c(9,7,4,2,1,0,0,0,0,0,0, 1, 3, 4, 6, 7, 9,10,10,10,10,10)
 monopoly_y <- c(0,0,0,0,0,1,3,4,6,8,9,10,10,10,10,10,10, 9, 8, 6, 3, 1)
 
 
-if(!file.exists("monopoly_streets.RDS")){
-  de <- st_read("streets.geojson")
-  de1 <- de %>% 
-    dplyr::filter(NAME%in%monopoly_names)
-  saveRDS(de1,"monopoly_streets.RDS")
-} else{
-  de1 <- readRDS("monopoly_streets.RDS")
-  de1$NAME <- factor(de1$NAME,levels = monopoly_names)
-}
+de1 <- readRDS("monopoly_streets.RDS")
+de1$NAME <- factor(de1$NAME,levels = monopoly_names)
 de_shp <- rnaturalearth::ne_countries(scale=50,country="Germany",returnclass = "sf")
 
 monopoly_tbl <- tibble(name=factor(monopoly_names,levels = monopoly_names),
@@ -116,7 +109,6 @@ p+plot_layout(design = layout)+
       ),
       plot.caption = element_text(size=34,family="Kabel",color="white"),
       plot.background = element_rect(fill="#CBF5CE")))
-  # annotate("text",x=-Inf,y=-Inf,hjust=0,vjust=0,label="© OpenStreetMap contributors",color="white",size=6,family="Kabel")
 dev.off()
 
 cmd <- paste0('convert ','"',"05_osm.png",'"',' -set filename:base "%[base]" -trim +repage "%[filename:base].png"')
