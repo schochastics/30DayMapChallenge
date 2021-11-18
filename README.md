@@ -16,3 +16,4 @@
 ![](15_no_pc/15_no_pc.png)
 ![](16_urban_rural/16_urban_rural.png)
 ![](17_land/17_land.png)
+![](18_land/18_land.png)
