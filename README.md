@@ -17,3 +17,4 @@
 ![](16_urban_rural/16_urban_rural.png)
 ![](17_land/17_land.png)
 ![](18_water/18_water.png)
+![](19_islands/19_islands.png)
