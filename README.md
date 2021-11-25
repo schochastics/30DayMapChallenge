@@ -23,3 +23,4 @@
 ![](22_boundaries/22_boundaries.png)
 ![](23_ghsl/23_ghsl.png)
 ![](24_historical/24_historical.png)
+![](25_interactive/25_interactive.png)
