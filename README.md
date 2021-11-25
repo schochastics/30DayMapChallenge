@@ -24,3 +24,4 @@
 ![](23_ghsl/23_ghsl.png)
 ![](24_historical/24_historical.png)
 ![](25_interactive/25_interactive.png)
+![](26_choropleth/26_choropleth.png)
