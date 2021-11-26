@@ -25,3 +25,4 @@
 ![](24_historical/24_historical.png)
 ![](25_interactive/25_interactive.png)
 ![](26_choropleth/26_choropleth.png)
+![](27_heatmap/27_heatmap.png)
