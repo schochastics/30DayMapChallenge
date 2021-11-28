@@ -26,3 +26,5 @@
 ![](25_interactive/25_interactive.png)
 ![](26_choropleth/26_choropleth.png)
 ![](27_heatmap/27_heatmap.png)
+![](28_not_flat/28_not_flat.gif)
+![](29_NULL/29_NULL.png)
